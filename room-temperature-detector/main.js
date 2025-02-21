@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-// Function to generate a random temperature between 15°C and 35°C
+
 function generateRandomTemperature() {
     return Math.floor(Math.random() * (35 - 15 + 1) + 15);
 }
@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
     });
 });
 
-// Start the server on port 3000
+
 server.listen(3000, () => {
     console.log('Server running on port 3000');
 });
